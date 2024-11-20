@@ -1,0 +1,11 @@
+[mariadb]
+# enable query_cache
+query_cache_type=1
+query_cache_limit=256K
+query_cache_min_res_unit=2k
+query_cache_size=512M
+max_connections=200
+# slow query
+slow-query-log=1
+slow-query-log-file="/var/log/mysql/mysql-slow.log"
+long_query_time = 1
